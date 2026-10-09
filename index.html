@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batyr — Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Batyr</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="btn" type="button">Dark mode</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="top">
+      <h1>Hi, I'm Batyr</h1>
+      <p class="lead">I'm a web developer in training, building my skills one project at a time.</p>
+    </section>
+
+    <section class="container section" id="about">
+      <h2>About Me</h2>
+      <p>I'm a third-year IT Management student at KBTU in Almaty. I work with Python, C++ and AWS, and I'm learning Golang, web development and ethical hacking.</p>
+      <p>This site collects what I have built so far, from my first HTML page to a multi-page React app.</p>
+    </section>
+
+    <section class="container section" id="projects">
+      <h2>Projects</h2>
+      <ul class="project-grid">
+        <li class="card">
+          <h3>Profile Card</h3>
+          <p>A responsive profile card with semantic HTML, Flexbox layout and a JavaScript like button, restyled with Tailwind and run with Vite.</p>
+          <a href="https://github.com/btanat/iwamad-practice/tree/week-02">View code</a>
+        </li>
+        <li class="card">
+          <h3>React + TypeScript Card</h3>
+          <p>The same card rebuilt in React and TypeScript with typed props, reusable components and a skills list.</p>
+          <a href="https://github.com/btanat/iwamad-practice/tree/week-03">View code</a>
+        </li>
+        <li class="card">
+          <h3>Multi-page React App</h3>
+          <p>A routed app with a shared layout, likes shared across pages through Context, and a first test written with Vitest.</p>
+          <a href="https://btanat.github.io/iwamad-practice/">Open live page</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container section" id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name">
+          <p class="error" id="name-error"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="text" autocomplete="email">
+          <p class="error" id="email-error"></p>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <p class="error" id="message-error"></p>
+        </div>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p id="formStatus" class="status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Batyr. Almaty, Kazakhstan.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
